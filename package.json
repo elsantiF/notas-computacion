@@ -1,18 +1,27 @@
 {
-  "name": "notas-computacion",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/mdx": "^4.3.13",
-    "@astrojs/svelte": "^7.2.5",
-    "astro": "^5.17.1",
-    "svelte": "^5.53.7",
-    "typescript": "^5.9.3"
-  }
+	"name": "notas-computacion",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"format": "biome format .",
+		"format:write": "biome format . --write",
+		"lint": "biome check .",
+		"lint:write": "biome check . --write",
+		"check": "biome check .",
+		"check:write": "biome check . --write"
+	},
+	"dependencies": {
+		"@astrojs/mdx": "^4.3.13",
+		"@astrojs/svelte": "^7.2.5",
+		"astro": "^5.17.1",
+		"svelte": "^5.53.7",
+		"typescript": "^5.9.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.6"
+	}
 }

@@ -1,10 +1,11 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
 
-import svelte from '@astrojs/svelte';
-import mdx from '@astrojs/mdx';
+import mdx from "@astrojs/mdx";
+
+import svelte from "@astrojs/svelte";
+import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [svelte(), mdx()]
+	integrations: [svelte(), mdx()],
 });
