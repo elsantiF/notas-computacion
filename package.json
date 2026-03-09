@@ -18,6 +18,8 @@
 		"@astrojs/mdx": "^4.3.13",
 		"@astrojs/svelte": "^7.2.5",
 		"astro": "^5.17.1",
+		"rehype-katex": "^7.0.1",
+		"remark-math": "^6.0.0",
 		"svelte": "^5.53.7",
 		"typescript": "^5.9.3"
 	},
