@@ -1,9 +1,19 @@
 ---
-import Button from "@/components/Button.svelte";
 import CommonLayout from "@/layouts/CommonLayout.astro";
+import { getCollection } from "astro:content";
+
+const notes = await getCollection("notes");
+notes.sort((a, b) => a.data.id - b.data.id);
 ---
 
 <CommonLayout title="Notas de Computación">
 	<h1>Notas</h1>
-	<Button label="Click aquí" />
+    <p>Notas de Computación</p>
+    <ul>
+	    {notes.map((note) => (
+			<li>
+				<a href={`/note/${note.id}`}>{note.data.title}</a>
+			</li>
+		))}
+	</ul>
 </CommonLayout>

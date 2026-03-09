@@ -1,0 +1,24 @@
+---
+import CommonLayout from "@/layouts/CommonLayout.astro";
+import { getCollection, getEntry, render } from "astro:content";
+
+const { slug } = Astro.params;
+
+export async function getStaticPaths() {
+	const notes = await getCollection("notes");
+	return notes.map((note) => ({
+		params: { slug: note.id },
+	}));
+}
+
+const entry = await getEntry("notes", slug);
+if (!entry) {
+	throw new Error("Entry not found");
+}
+
+const { Content } = await render(entry);
+---
+
+<CommonLayout title={entry.data.title}>
+		<Content />
+</CommonLayout>
