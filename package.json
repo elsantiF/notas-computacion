@@ -21,7 +21,7 @@
 		"rehype-katex": "^7.0.1",
 		"remark-math": "^6.0.0",
 		"svelte": "^5.53.7",
-		"typescript": "^6.0.2"
+		"typescript": "^5.9.3"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.4.8"
