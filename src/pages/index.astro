@@ -1,6 +1,6 @@
 ---
-import CommonLayout from "@/layouts/CommonLayout.astro";
 import { getCollection } from "astro:content";
+import CommonLayout from "@/layouts/CommonLayout.astro";
 
 const notes = await getCollection("notes");
 notes.sort((a, b) => a.data.id - b.data.id);

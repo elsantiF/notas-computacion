@@ -9,8 +9,11 @@ import remarkMath from "remark-math";
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [svelte(), mdx({
-		remarkPlugins: [remarkMath],
-		rehypePlugins: [rehypeKatex],
-	})],
+	integrations: [
+		svelte(),
+		mdx({
+			remarkPlugins: [remarkMath],
+			rehypePlugins: [rehypeKatex],
+		}),
+	],
 });
