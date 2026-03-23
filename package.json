@@ -15,15 +15,15 @@
 		"check:write": "biome check . --write"
 	},
 	"dependencies": {
-		"@astrojs/mdx": "^4.3.13",
-		"@astrojs/svelte": "^7.2.5",
-		"astro": "^5.17.1",
+		"@astrojs/mdx": "^5.0.2",
+		"@astrojs/svelte": "^8.0.3",
+		"astro": "^6.0.8",
 		"rehype-katex": "^7.0.1",
 		"remark-math": "^6.0.0",
 		"svelte": "^5.53.7",
-		"typescript": "^5.9.3"
+		"typescript": "^6.0.2"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.4.6"
+		"@biomejs/biome": "^2.4.8"
 	}
 }
